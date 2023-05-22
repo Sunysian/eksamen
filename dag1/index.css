@@ -1,0 +1,11 @@
+#checkomraade {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#radioknapomraade {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
