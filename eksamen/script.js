@@ -44,14 +44,14 @@ function addinput(billet) {
     if (billet == "barnbillet") {
         if (barn.checked) {
             console.log("Checkbox is checked..");
-            var inputchild = document.createElement("select");
-            inputchild.style = "margin-top: 1em";
+            var inputbarn = document.createElement("select");
+            inputbarn.style = "margin-top: 1em";
             for (var i = 0; i < 5; i++) {
                 var options = document.createElement("option");
                 options.innerHTML = i;
                 options.value = i;
-                inputchild.appendChild(options);
-                barnbillet.appendChild(inputchild);
+                inputbarn.appendChild(options);
+                barnbillet.appendChild(inputbarn);
             }
         } else {
             console.log("Checkbox is not checked..");
@@ -98,6 +98,8 @@ function beregn1() {
 
 };
 
+
+
 function beregn() {
     if (document.getElementById("barn").checked === true) {
         typebillet = 199;
@@ -114,3 +116,4 @@ function beregn() {
     bilpris.textContent = personerbillet + "kr";
     totalprisdisplay.textContent = "Total:" + totalpris + "kr";
 };
+
