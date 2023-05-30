@@ -30,7 +30,7 @@ function clicking(number) {
 
 
 function checkout() {
-    if (navn.value === "" || adresse.value === "" || epost.value === "" || telefonnumer.value === "" || document.getElementById("dyreaparken").checked === false && document.getElementById("badeland").checked === false && document.getElementById("begge").checked === false) {
+    if (navn.value === "" || adresse.value === "" || epost.value === "" || telefonnumer.value === "" || document.getElementById("barn").checked === false && document.getElementById("voksen").checked === false && document.getElementById("eldre").checked === false) {
         alert("Fyll alle feltene.")
     } else {
         window.location = "bookingthankyou.html";
@@ -40,7 +40,9 @@ function checkout() {
 
 
 
+/*
 function addinput(billet) {
+    console.log(e.target.value);
     if (billet == "barnbillet") {
         if (barn.checked) {
             console.log("Checkbox is checked..");
@@ -99,7 +101,6 @@ function beregn1() {
 };
 
 
-
 function beregn() {
     if (document.getElementById("barn").checked === true) {
         typebillet = 199;
@@ -116,4 +117,4 @@ function beregn() {
     bilpris.textContent = personerbillet + "kr";
     totalprisdisplay.textContent = "Total:" + totalpris + "kr";
 };
-
+*/

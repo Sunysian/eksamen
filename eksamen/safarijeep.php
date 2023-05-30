@@ -46,41 +46,42 @@
                 <input type="radio" name="tickettype" class="radio" value="349" id="eldre">
             </div>
         </div>
+
+        <button class="button" onclick="checkout()">betal</button>
+        <input type="submit" value="Logg inn" name="submit" />
+    </div>
         <br>
         <input type="submit" value="Betal" name="submit" style="border: none; background-color: rgb(98, 187, 113); color: white; border-radius: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; margin-left: 39.7rem; font-weight: 500; font-size: 1.5rem; cursor: pointer;"/>
-    </div>
-    
+    <?php
+        if(isset($_POST['submit'])){
+            //Gjøre om POST-data til variabler
+            $brukernavn = $_POST['brukernavn'];
+            $passord = $_POST['passord'];
+            
+            //Koble til databasen
+            $dbc = mysqli_connect('localhost', 'root', '', 'mydb')
+              or die('Error connecting to MySQL server.');
+            
+            //Gjøre klar SQL-strengen
+            $query = "INSERT INTO users VALUES ('$brukernavn','$passord')";
+            
+            //Utføre spørringen
+            $result = mysqli_query($dbc, $query)
+              or die('Error querying database.');
+            
+            //Koble fra databasen
+            mysqli_close($dbc);
 
-        
-        <!--
-        <h1>Checkout</h1>
-        <div class="checkout">
-            <div class="row ">
-                <div>
-                    <p class="text" id="typebil"></p>
-                    <p class="text color-correction" id="bilpp"></p>
-                </div>
-                <div class="productprice">
-                    <p class="flexend" id="bilpris"></p>
-                </div>
-            </div>
-            <div class="row ">
-                <div>
-                    <p class="text" id="antalldessert"></p>
-                    <p class="text color-correction" id="dessertpp"></p>
-                </div>
-                <div class="productprice">
-                    <p class="flexend" id="dessertpris"></p>
-                </div>
-            </div>
-            <hr>
-            <div class="text flexend column">
-                <p id="totalpris">total + pris</p>
-                <button class="button" onclick="checkout()">betal</button>
-            </div>     
-        </div>
-        <p>‎</p>
-    -->
+            //Sjekke om spørringen gir resultater
+            if($result){
+                //Gyldig login
+                echo "Takk for at du lagde bruker! Trykk <a href='index.php'>her</a> for å logge inn";
+            }else{
+                //Ugyldig login
+                echo "Noe gikk galt, prøv igjen!";
+            }
+        }
+    ?>
     
     <script src="script.js"></script>
 </body>
