@@ -103,10 +103,6 @@ button:hover {
     margin-top: 5em;
 }
 
-#content img {
-    width: 33em;
-}
-
 .innercolumn {
     display: flex;
     flex-direction: column;
@@ -160,17 +156,6 @@ h1{
     font-weight: 600;
     margin-left: 1rem;
     font-family: calibri;
-}
-
-.specialticket{
-    padding-right: 2rem;
-    padding-left: 2rem;
-}
-
-.row{
-    display: flex;
-    flex-direction: row;
-    height: auto;
 }
 
 select{
