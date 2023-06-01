@@ -11,9 +11,9 @@
     <div id="menu">
         <a href="index.html"><img src="YAlogowhite.svg" alt="" style="height: 4em;"></svg>
         <div id="sites">
-            <a href="index.html">Hjem</a>
-            <a href="omKong.html">Om kongsberg</a>
-            <a href="safarijeep.html"><u>bestil billeter</u></a>
+            <a href="index.php">Hjem</a>
+            <a href="omKong.php">Om kongsberg</a>
+            <a href="safarijeep.php"><u>bestil billeter</u></a>
         </div>
     </div>
 
@@ -21,42 +21,62 @@
         <h1>BESTILLING</h1>
         <h2 class="text">Fyll inn</h2>
         <div class="text">
-            <p>Navn</p>
-            <input type="text" id="navn">
-            <p class="extramargin">Adresse</p>
-            <input type="text" id="adresse">
-            <p class="extramargin">E-post</p>
-            <input type="text" id="epost">
-            <p class="extramargin">Telefonnumer</p>
-            <input type="text" id="telefonnumer">
+            <form method="POST" action="processform.php">
+                <p>Navn</p>
+                <input type="text" id="navn" name="navn" required>
+                <p class="extramargin">Adresse</p>
+                <input type="text" id="adresse" name="adresse" required>
+                <p class="extramargin">E-post</p>
+                <input type="text" id="epost" name="epost" required>
+                <p class="extramargin">Telefonnumer</p>
+                <input type="text" id="telefonnumer" name="telefonnummer" required>
+                <h2 class="text extramargin">Type billeter</h2>
+                <div class="ticketdiv">
+                    <div class="tickets smallticket" id="barnbillet">
+                        <p><b>Barn</b><br>(under 12)<br>199kr</p>
+                        <input type="radio" name="pris" class="radio" value="199" id="barn" required>
+                    </div>
+                    <div class="tickets" id="voksenbillet">
+                        <p><b>Voksen</b><br><br>369kr</p>
+                        <input type="radio" name="pris" class="radio" value="369" id="voksen" required>
+                    </div>
+                    <div class="tickets" id="eldrebillet">
+                        <p st><b>Eldre</b><br>(over 60)<br>249kr</p>
+                        <input type="radio" name="pris" class="radio" value="249" id="eldre" required>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <input type="submit" value="submit" name="submit" style="border: none; background-color: rgb(98, 187, 113); color: white; border-radius: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; margin-left: 39.7rem; font-weight: 500; font-size: 1.5rem;"/>
+            </form>
         </div>
 
-        <h2 class="text extramargin">Type billeter</h2>
-        <div class="ticketdiv">
-            <div class="tickets smallticket" id="barnbillet">
-                <p><b>Barn</b><br>(under 12)<br>199kr</p>
-                <input type="radio" name="tickettype" class="radio" value="269" id="barn">
-            </div>
-            <div class="tickets" id="voksenbillet">
-                <p><b>Voksen</b><br><br>369kr</p>
-                <input type="radio" name="tickettype" class="radio" value="199" id="voksen">
-            </div>
-            <div class="tickets" id="eldrebillet">
-                <p st><b>Eldre</b><br>(over 60)<br>249kr</p>
-                <input type="radio" name="tickettype" class="radio" value="349" id="eldre">
-            </div>
-        </div>
 
-        <button class="button" onclick="checkout()">betal</button>
-        <input type="submit" value="Logg inn" name="submit" />
-    </div>
-        <br>
-        <input type="submit" value="Betal" name="submit" style="border: none; background-color: rgb(98, 187, 113); color: white; border-radius: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; margin-left: 39.7rem; font-weight: 500; font-size: 1.5rem; cursor: pointer;"/>
+
+
+
+
+
     <?php
+        $servername = "localhost"; 
+        $username = "root";  
+        $password = ""; 
+        $database = "mydbeks"; 
+        
+        // Create connection
+        $conn = new mysqli($servername, $username, $password, $database);
+        
+        // Check connection
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+        /*
         if(isset($_POST['submit'])){
             //Gjøre om POST-data til variabler
             $brukernavn = $_POST['brukernavn'];
             $passord = $_POST['passord'];
+            $epost = $_POST['epost'];
+            $telefonnummer = $_POST['telefonnummer'];
             
             //Koble til databasen
             $dbc = mysqli_connect('localhost', 'root', '', 'mydb')
@@ -81,6 +101,14 @@
                 echo "Noe gikk galt, prøv igjen!";
             }
         }
+        */
+        
+    ?>
+    <?php
+    // ...
+
+    // Close the connection
+    $conn->close();
     ?>
     
     <script src="script.js"></script>
