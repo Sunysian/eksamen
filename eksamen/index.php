@@ -42,9 +42,9 @@
             </div>
             <img src="jeep.jpg" alt="">
         </div>
-        <div id="special">
+        <div>
             <img src="route.jpg" alt="" style="padding-top: 5em; padding-bottom: 5em;">
-            <div class="innercolumn" style="color: white;">
+            <div class="innercolumn">
                 <p>
                     Rundtur i Svartås - gruveåsen
                 </p>

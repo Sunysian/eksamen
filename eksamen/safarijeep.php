@@ -55,8 +55,6 @@
 
 
 
-
-
     <?php
         $servername = "localhost"; 
         $username = "root";  
@@ -70,45 +68,10 @@
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
-        /*
-        if(isset($_POST['submit'])){
-            //Gjøre om POST-data til variabler
-            $brukernavn = $_POST['brukernavn'];
-            $passord = $_POST['passord'];
-            $epost = $_POST['epost'];
-            $telefonnummer = $_POST['telefonnummer'];
-            
-            //Koble til databasen
-            $dbc = mysqli_connect('localhost', 'root', '', 'mydb')
-              or die('Error connecting to MySQL server.');
-            
-            //Gjøre klar SQL-strengen
-            $query = "INSERT INTO users VALUES ('$brukernavn','$passord')";
-            
-            //Utføre spørringen
-            $result = mysqli_query($dbc, $query)
-              or die('Error querying database.');
-            
-            //Koble fra databasen
-            mysqli_close($dbc);
+        // ...
 
-            //Sjekke om spørringen gir resultater
-            if($result){
-                //Gyldig login
-                echo "Takk for at du lagde bruker! Trykk <a href='index.php'>her</a> for å logge inn";
-            }else{
-                //Ugyldig login
-                echo "Noe gikk galt, prøv igjen!";
-            }
-        }
-        */
-        
-    ?>
-    <?php
-    // ...
-
-    // Close the connection
-    $conn->close();
+        // Close the connection
+        $conn->close();
     ?>
     
     <script src="script.js"></script>

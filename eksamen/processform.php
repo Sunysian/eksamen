@@ -1,11 +1,11 @@
 <?php
-        $servername = "localhost"; 
-        $username = "root";  
-        $password = ""; 
-        $database = "mydbeks"; 
+    $servername = "localhost"; 
+    $username = "root";  
+    $password = ""; 
+    $database = "mydbeks"; 
         
-        // Create connection
-        $conn = new mysqli($servername, $username, $password, $database);
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $database);
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve form data
@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Perform any necessary data validation or sanitization here
 
     // Insert the data into the database
-    $sql = "INSERT INTO mydbeks (navn, adresse, epost, telefonnummer, pris) VALUES ('$navn', '$adresse', '$epost', '$telefonnummer', '$pris')";
+    $sql = "INSERT INTO kunde (navn, adresse, epost, telefonnummer, pris) VALUES ('$navn', '$adresse', '$epost', '$telefonnummer', '$pris')";
     if ($conn->query($sql) === TRUE) {
         echo "Data inserted successfully!";
     } else {
