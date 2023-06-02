@@ -20,9 +20,9 @@ var eldre = document.getElementById("eldre");
 
 function clicking(number) {
     if (number == 1) {
-        window.location = "omKong.html";
+        window.location = "omKong.php";
     } else if (number == 2) {
-        window.location = "safarijeep.html";
+        window.location = "safarijeep.php";
     } else if (number == 3) {
         window.open("https://ut.no/turforslag/116294");
     }

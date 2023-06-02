@@ -90,7 +90,7 @@ button:hover {
 }
 
 
-#content img, #content p {
+#content img, #content .innercolumn {
     flex: 1;
 }
 
@@ -106,7 +106,6 @@ button:hover {
 
 #content img {
     width: 13em;
-    filter: grayscale(100%);
 }
 
 .innercolumn {
@@ -116,7 +115,11 @@ button:hover {
     justify-content: center;
 }
 
-
+.footer {
+    background-color: rgb(98, 187, 113);
+    color: white;
+    text-align: center;
+}
 
 
 

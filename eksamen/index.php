@@ -1,10 +1,11 @@
+<?php include 'config.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=<?=$version?>">
     <title>Hjem</title>
 </head>
 <body>
@@ -42,7 +43,8 @@
             </div>
             <img src="jeep.jpg" alt="">
         </div>
-        <div>
+
+        <div class="row">
             <img src="route.jpg" alt="" style="padding-top: 5em; padding-bottom: 5em;">
             <div class="innercolumn">
                 <p>
@@ -52,8 +54,13 @@
             </div>
         </div>
     </div>
+    <div class="footer">
+        <p>Har du spørsmål eller vil samarbeide med oss? Kontakt oss gjerne.</p>
+        <p>E-post: kontakt@prosjektet.no</p>
+        <p>Telefon: 12345678</p>
+    </div>
     
-    <script src="script.js"></script>
+    <script src="script.js?v=<?=$version?>"></script>
 </body>
 </html>
 
