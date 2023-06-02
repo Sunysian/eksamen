@@ -9,15 +9,7 @@
     <title>Hjem</title>
 </head>
 <body>
-    <div id="menu">
-        <a href="index.php"><img src="YAlogowhite.svg" alt="" style="height: 4em;"></svg>
-        <div id="sites">
-            <a href="index.php"><u>Hjem</u></a>
-            <a href="omKong.php">Om kongsberg</a>
-            <a href="safarijeep.php">bestil billeter</a>
-        </div>
-    </div>
-
+    <?php require 'menu.php' ?>
     <div  id="header">
         <p>Har du lyst å vite mer om turene?</p>
         <button onclick="clicking(1)">Les videre</button>
@@ -44,19 +36,23 @@
             <img src="jeep.jpg" alt="">
         </div>
 
+        <div>
+
+        </div>
+
         <div class="row">
             <img src="route.jpg" alt="" style="padding-top: 5em; padding-bottom: 5em;">
             <div class="innercolumn">
                 <p>
                     Rundtur i Svartås - gruveåsen
                 </p>
-                <button style="background-color: black;" onclick="clicking(3)">Les om turen</button>
+                <button onclick="clicking(3)">Les om turen</button>
             </div>
         </div>
     </div>
     <div class="footer">
         <p>Har du spørsmål eller vil samarbeide med oss? Kontakt oss gjerne.</p>
-        <p>E-post: kontakt@prosjektet.no</p>
+        <p>E-post: <a href="mailto:example@example.com" style="color: white;">kontakt@prosjektet.no</a></p>
         <p>Telefon: 12345678</p>
     </div>
     

@@ -41,6 +41,10 @@ body {
     width: 75%;
 }
 
+#menu .active {
+    text-decoration: underline;
+}
+
 #header {
     background-image: url(header.jpg);
     font-family: Arial, Helvetica, sans-serif;
@@ -119,6 +123,7 @@ button:hover {
     background-color: rgb(98, 187, 113);
     color: white;
     text-align: center;
+    padding: 1rem;
 }
 
 

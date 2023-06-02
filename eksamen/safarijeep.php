@@ -8,14 +8,7 @@
     <title>bestil billeter</title>
 </head>
 <body>
-    <div id="menu">
-        <a href="index.php"><img src="YAlogowhite.svg" alt="" style="height: 4em;"></svg>
-        <div id="sites">
-            <a href="index.php">Hjem</a>
-            <a href="omKong.php">Om kongsberg</a>
-            <a href="safarijeep.php"><u>bestil billeter</u></a>
-        </div>
-    </div>
+    <?php require 'menu.php' ?>
 
     <div class="BESTILLING">
         <h1>BESTILLING</h1>
