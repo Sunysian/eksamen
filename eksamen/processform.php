@@ -1,7 +1,7 @@
 <?php
     $servername = "localhost"; 
     $username = "root";  
-    $password = ""; 
+    $password = "yosraDB"; 
     $database = "mydbeks"; 
         
     // Create connection
