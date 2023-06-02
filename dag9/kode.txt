@@ -1,4 +1,0 @@
-
-for det første elementet, så vil den går gjenomm å skjekke elementet med neste elementet i listen. Hvis første elementet
-
-
