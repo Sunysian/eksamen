@@ -20,8 +20,6 @@ $current_page = basename($_SERVER['PHP_SELF']);
                 <li <?php if ($current_page === 'omturen.php') echo ' class="active"'; ?>><a href="omturen.php">Om Turene</a></li>
                 <li <?php if ($current_page === 'safarijeep.php') echo ' class="active"'; ?>><a href="safarijeep.php">Bestil Billetter</a></li>
             </ul>
-            
-            
         </div>
     </div>
 </body>

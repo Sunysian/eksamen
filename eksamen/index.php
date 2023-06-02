@@ -36,8 +36,11 @@
             <img src="jeep.jpg" alt="">
         </div>
 
-        <div>
-
+        <div style="background-color: rgb(98, 187, 113); color:white; font-size: 0.75em; padding: 5em;">
+            <p>Opplev det ultimate norske Jeep-eventyret! Bli med på spennende turer gjennom de fantastiske norske landskapene med våre ekstraordinære Jeep-turer. Våre erfarne guider vil lede deg gjennom svingete skogsstier og erobre hindringer så surrealistiske som en smeltet osteskulptur. Kjenn kraften i våre brølende Jeeps, synkronisert med ditt eventyrlige sinn.
+            <br> <br>
+            Enten du søker spenning, fantastiske utsikter eller bare en god dose tullball, har våre Jeep-turer alt. Bli med oss på et uforglemmelig eventyr som vil skape minner for livet. Bestill din plass nå og la lekenhetens og utforskningens ånd guide deg på en ekstraordinær Jeep-tur gjennom Norges vidundere. Ditt uforglemmelige eventyr venter!</p>
+            <p><a href="omturen.php" style="color: white;">Les Mer!</a></p>
         </div>
 
         <div class="row">
@@ -50,13 +53,8 @@
             </div>
         </div>
     </div>
-    <div class="footer">
-        <p>Har du spørsmål eller vil samarbeide med oss? Kontakt oss gjerne.</p>
-        <p>E-post: <a href="mailto:example@example.com" style="color: white;">kontakt@prosjektet.no</a></p>
-        <p>Telefon: 12345678</p>
-    </div>
-    
-    <script src="script.js?v=<?=$version?>"></script>
+    <?php require 'footer.php'?>
+    <script src="script.js"></script>
 </body>
 </html>
 

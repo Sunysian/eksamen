@@ -8,7 +8,7 @@
     <title>bestil billeter</title>
 </head>
 <body>
-    <?php require 'menu.php' ?>
+    <?php require 'menu.php'?>
 
     <div class="BESTILLING">
         <h1>BESTILLING</h1>
@@ -43,6 +43,8 @@
             <input type="submit" value="submit" name="submit" style="border: none; background-color: rgb(98, 187, 113); color: white; border-radius: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; margin-left: 39.7rem; font-weight: 500; font-size: 1.5rem;"/>
             </form>
         </div>
+        
+    <?php require 'footer.php'?>
 
 
 
