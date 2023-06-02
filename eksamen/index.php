@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="menu">
-        <a href="index.html"><img src="YAlogowhite.svg" alt="" style="height: 4em;"></svg>
+        <a href="index.php"><img src="YAlogowhite.svg" alt="" style="height: 4em;"></svg>
         <div id="sites">
             <a href="index.php"><u>Hjem</u></a>
             <a href="omKong.php">Om kongsberg</a>

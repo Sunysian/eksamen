@@ -103,6 +103,10 @@ button:hover {
     margin-top: 5em;
 }
 
+#content img {
+    width: 13em;
+}
+
 .innercolumn {
     display: flex;
     flex-direction: column;
