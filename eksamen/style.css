@@ -86,10 +86,11 @@ button:hover {
     margin-right: 10em;
     margin-left: 10em;
     margin-bottom: 5em;
+    height: auto;
 }
 
 
-#content img, #content .innercolumn {
+#content img, #content p {
     flex: 1;
 }
 
@@ -105,6 +106,7 @@ button:hover {
 
 #content img {
     width: 13em;
+    filter: grayscale(100%);
 }
 
 .innercolumn {
