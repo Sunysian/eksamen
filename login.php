@@ -51,7 +51,7 @@
             // Password is correct, start a session
             session_start();
             $_SESSION['loginusername'] = $loginusername;
-            // Redirect to a protected area or display a success message
+            // Redirect to page
             header("Location: tables.php");
             exit();
         }
