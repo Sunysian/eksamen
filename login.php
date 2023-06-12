@@ -30,20 +30,6 @@
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
-        
-        // Establish database connection
-        $servername = "localhost"; 
-        $username = "root";  
-        $password = "yosraDB"; 
-        $database = "mydbeks"; 
-        
-        // Create connection
-        $conn = new mysqli($servername, $username, $password, $database);
-
-        // Check connection
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        }
 
         // Retrieve user input
         $loginusername = $_POST['loginusername'];
@@ -68,9 +54,6 @@
             // Redirect to a protected area or display a success message
             header("Location: tables.php");
             exit();
-        } else {
-            // Invalid username or password
-            echo "Invalid username or password.";
         }
         
         $conn->close();
