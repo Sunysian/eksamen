@@ -6,6 +6,7 @@
         
     // Create connection
     $conn = new mysqli($servername, $username, $password, $database);
+    
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve form data

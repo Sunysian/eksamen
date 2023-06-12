@@ -30,16 +30,6 @@ function clicking(number) {
 
 
 
-function checkout() {
-    if (navn.value === "" || adresse.value === "" || epost.value === "" || telefonnumer.value === "" || document.getElementById("barn").checked === false && document.getElementById("voksen").checked === false && document.getElementById("eldre").checked === false) {
-        alert("Fyll alle feltene.")
-    } else {
-        window.location = "bookingthankyou.html";
-    }
-};
-
-
-
 
 /*
 function addinput(billet) {
