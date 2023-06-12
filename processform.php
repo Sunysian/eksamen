@@ -21,7 +21,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Insert the data into the database
     $sql = "INSERT INTO kunde (navn, adresse, epost, telefonnummer, pris) VALUES ('$navn', '$adresse', '$epost', '$telefonnummer', '$pris')";
     if ($conn->query($sql) === TRUE) {
-        echo "Data inserted successfully!";
+        echo "Data inserted successfully! <br>";
+        echo "<a href='index.php'><</a>";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
