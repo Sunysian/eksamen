@@ -1,7 +1,7 @@
 <?php
     $servername = "localhost"; 
     $username = "root";  
-    $password = "yosraDB"; 
+    $password = ""; 
     $database = "mydbeks"; 
         
     // Create connection
@@ -16,7 +16,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $telefonnummer = $_POST['telefonnummer'];
     $pris = $_POST['pris'];
 
-    // Perform any necessary data validation or sanitization here
 
     // Insert the data into the database
     $sql = "INSERT INTO kunde (navn, adresse, epost, telefonnummer, pris) VALUES ('$navn', '$adresse', '$epost', '$telefonnummer', '$pris')";

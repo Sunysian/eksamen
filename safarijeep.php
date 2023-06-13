@@ -53,7 +53,7 @@
     <?php
         $servername = "localhost"; 
         $username = "root";  
-        $password = "yosraDB"; 
+        $password = ""; 
         $database = "mydbeks"; 
         
         // Create connection
