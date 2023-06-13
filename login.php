@@ -46,9 +46,6 @@
         
 
         if ($result->num_rows == 1) {
-            $row = $result->fetch_assoc();
-            $storedHashedPassword = $row['loginpassword'];
-            // Verify the password
             // Password is correct, start a session
             session_start();
             $_SESSION['loginusername'] = $loginusername;
